@@ -3,7 +3,7 @@ import lombok.Getter;
 import lombok.Setter;
 import javax.persistence.Embeddable;
 @Embeddable
-@Getter
+@Getter // Entity에서 유지보수 이유로 setter를 가급적 사용하지 말자
 public class Address {
     private String city;
     private String street;
